@@ -51,7 +51,7 @@ angular
       })
       .when('/email', {
         templateUrl: 'views/email.html',
-        controller: 'emailCtrl',
+        controller: 'EmailCtrl',
         controllerAs: 'email'
       })
       .when('/preview', {

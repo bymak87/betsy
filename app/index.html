@@ -48,16 +48,20 @@
       </div>
     </div>
     <div id="status-buttons" class="text-center">
-      <a href="#"><span>1</span>Getting Started</a>
-      <a href="#"><span>2</span>Features</a>
-      <a href="#"><span>3</span>Typography</a>
-      <a href="#"><span>4</span>Styling</a>
-      <a href="#"><span>5</span>Email</a>
-      <a href="#"><span>6</span>Preview</a>
+      <a ng-href="#/started" class="active"><span>1</span>Getting Started</a>
+      <a ng-href="#/features"><span>2</span>Features</a>
+      <a ng-href="#/typography"><span>3</span>Typography</a>
+      <a ng-href="#/styling"><span>4</span>Styling</a>
+      <a ng-href="#/email"><span>5</span>Email</a>
+      <a ng-href="#/preview"><span>6</span>Preview</a>
     </div>
     <div class="container">
-    <div ng-view=""></div>
-    </div>
+      <div class="row">
+        <div ng-view="" class="col-md-9"></div>
+        <div id="phone" class="col-md-3"><img src="images/iphone.png" class="phone" alt=""></div>
+        </div>
+      </div>
+
 
     <div class="footer">
       <div class="container">
@@ -95,6 +99,12 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/started.js"></script>
+        <script src="scripts/controllers/features.js"></script>
+        <script src="scripts/controllers/typography.js"></script>
+        <script src="scripts/controllers/styling.js"></script>
+        <script src="scripts/controllers/email.js"></script>
+        <script src="scripts/controllers/preview.js"></script>
         <!-- endbuild -->
 </body>
 </html>
