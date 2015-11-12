@@ -29,6 +29,36 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
+      .when('/started', {
+        templateUrl: 'views/started.html',
+        controller: 'StartedCtrl',
+        controllerAs: 'started'
+      })
+      .when('/features', {
+        templateUrl: 'views/features.html',
+        controller: 'FeaturesCtrl',
+        controllerAs: 'feautures'
+      })
+      .when('/typography', {
+        templateUrl: 'views/typography.html',
+        controller: 'TypographyCtrl',
+        controllerAs: 'typography'
+      })
+      .when('/styling', {
+        templateUrl: 'views/styling.html',
+        controller: 'StylingCtrl',
+        controllerAs: 'styling'
+      })
+      .when('/email', {
+        templateUrl: 'views/email.html',
+        controller: 'emailCtrl',
+        controllerAs: 'email'
+      })
+      .when('/preview', {
+        templateUrl: 'views/preview.html',
+        controller: 'PreviewCtrl',
+        controllerAs: 'preview'
+      })
       .otherwise({
         redirectTo: '/'
       });
