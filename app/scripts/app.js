@@ -51,7 +51,7 @@ angular
       })
       .when('/email', {
         templateUrl: 'views/email.html',
-        controller: 'EmailCtrl',
+        controller: 'emailCtrl',
         controllerAs: 'email'
       })
       .when('/preview', {
@@ -62,4 +62,5 @@ angular
       .otherwise({
         redirectTo: '/'
       });
+  
   });

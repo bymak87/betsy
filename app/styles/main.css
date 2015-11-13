@@ -72,13 +72,14 @@ body {
 #phone{
   float: right;
 }
+
 .phone{
   width: 75%;
   height: auto;
 }
-/* Responsive: Portrait tablets and up
+ Responsive: Portrait tablets and up
 @media screen and (min-width: 768px) {
-  .container {
+/*  .container {
     max-width: 730px;
   }
  */
