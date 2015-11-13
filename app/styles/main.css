@@ -61,16 +61,18 @@ body {
 }
 /* Custom */
 #status-buttons                 { padding-bottom: 55px; }
-#status-buttons a               { color:#000; display:inline-block; font-size:14px; margin-right:10px; text-align:center; text-transform: capitalize; width: 110px;}
+#status-buttons a               { color:#0D253D; display:inline-block; font-size:14px; margin-right:10px; text-align:center; text-transform: capitalize; width: 110px; font-weight: bold;}
 #status-buttons a:hover         { text-decoration:none; }
 #status-buttons span            { background:#0D253D; color: #fff; display:block; font-size: 18px; height:50px; margin:0 auto 10px; padding-top:12px; width:50px;
     border-radius:50%; }
 
 /* active buttons */
-#status-buttons a.active span   { background:#00BC8C; }
+#status-buttons a.active span   { background: white; color: #0D253D; }
 
 #phone{
   float: right;
+  padding-top: 45px;
+  padding-bottom: 50px;
 }
 
 .phone{

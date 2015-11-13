@@ -8,10 +8,6 @@
  * Controller of the keystokeApp
  */
 angular.module('keystokeApp')
-  .controller('FeaturesCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('FeaturesCtrl', function ($scope, Data) {
+    $scope.data = Data.data;
   });

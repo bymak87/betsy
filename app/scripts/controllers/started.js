@@ -8,10 +8,6 @@
  * Controller of the keystokeApp
  */
 angular.module('keystokeApp')
-  .controller('StartedCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('StartedCtrl', function ($scope, Data) {
+    $scope.data = Data.data;
   });
