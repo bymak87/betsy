@@ -79,6 +79,51 @@ body {
   width: 75%;
   height: auto;
 }
+
+.checkbox-slider--b-flat input+span {
+  color: #f5f5f5;
+}
+
+.no-top{
+  margin-top: 0;
+  padding-bottom: 20px;
+}
+.padder{
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+.btn {
+  width: 150px;
+  height: 40px;
+  border-radius: 0;
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding-top: 11px;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: 	#253B50;
+}
+button.btn {
+  padding-top: 6px;
+}
+.next-page{
+  background-color: #0D253D;
+}
+.next-page:hover{
+  background-color: #253B50;
+}
+.last-page{
+  background-color: #c30016;
+}
+.last-page:hover{
+  background-color: #C91A2D;
+}
+
+.checkbox-slider--b-flat input:checked+span:before{
+  background-color: #EF5C06;
+}
+
  Responsive: Portrait tablets and up
 @media screen and (min-width: 768px) {
 /*  .container {
