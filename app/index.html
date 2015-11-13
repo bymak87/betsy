@@ -49,12 +49,12 @@
     </div>
     <div class="container" ng-controller="MainCtrl">
       <div id="status-buttons" class="text-center">
-        <a ng-href="#/started" class="{active: location.href.includes('started')}"><span>1</span>Getting Started</a>
-        <a ng-href="#/features" class="{active: location.href.includes('features')}"><span>2</span>Features</a>
-        <a ng-href="#/typography" class="{active: location.href.includes('typography')}"><span>3</span>Typography</a>
-        <a ng-href="#/styling" class="{active: location.href.includes('styling')}"><span>4</span>Styling</a>
-        <a ng-href="#/email"><span>5</span>Email</a>
-        <a ng-href="#/preview"><span>6</span>Preview</a>
+        <a ng-href="#/started" ng-class="{ active: isActive('/started')}"><span>1</span>Getting Started</a>
+        <a ng-href="#/features" ng-class="{ active: isActive('/features')}"><span>2</span>Features</a>
+        <a ng-href="#/typography" ng-class=" { active: isActive('/typography')}"><span>3</span>Typography</a>
+        <a ng-href="#/styling" ng-class="{ active: isActive('/styling')}"><span>4</span>Styling</a>
+        <a ng-href="#/email" ng-class="{ active: isActive('/email')}"><span>5</span>Email</a>
+        <a ng-href="#/preview" ng-class="{ active: isActive('/preview')}"><span>6</span>Preview</a>
       </div>
       <div class="container">
         <div class="row">

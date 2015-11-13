@@ -8,10 +8,9 @@
  * Controller of the keystokeApp
  */
 angular.module('keystokeApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('MainCtrl', function ($scope, $location) {
+
+    $scope.isActive = function(viewLocation) {
+      return viewLocation === $location.path();
+    };
   });
