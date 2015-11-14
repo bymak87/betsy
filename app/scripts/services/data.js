@@ -33,11 +33,11 @@ angular.module('keystokeApp')
 
     // Public API here
     return {
-      getFirstName: function () {
-        return data.firstName;
+      getData: function () {
+        return data;
       },
-      setFirstName: function (firstName) {
-        data.firstName = firstName;
+      updateData: function () {
+        $scope.data = Data.data;
       }
     };
   });

@@ -5,15 +5,27 @@
       <div class="col-md-8">
         <div class="form-group">
           <label for="">Background:</label>
-          <input type="color" class="form-control" id="appName">
+          <select class="form-control" id="backgroundColor" ng-model="data.backgroundColor">
+            <option value="">White</option>
+            <option value="">Blue</option>
+            <option value="">Black</option>
+          </select>
         </div>
         <div class="form-group">
           <label for="">Bar Color:</label>
-          <input type="color" class="form-control" id="shopifyLink" >
+          <select class="form-control" id="barColor" ng-model="data.barColor">
+            <option value="">Black</option>
+            <option value="">Red</option>
+            <option value="">White</option>
+          </select>
         </div>
         <div class="form-group">
           <label for="">Button Color:</label>
-          <input type="color" class="form-control" id="shopifyLink">
+          <select type="color" class="form-control" id="buttonColor" ng-model="data.buttonColor">
+            <option value="">Red</option>
+            <option value="">Black</option>
+            <option value="">Blue</option>
+          </select>
         </div>
       </div>
 

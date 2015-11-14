@@ -7,14 +7,18 @@
           <div class="form-group">
             <h3>Fonts</h3>
             <label for="">Header:</label>
-            <select name="" id="">
-              <option value="arial">Arial</option>
+            <select name="" class="form-control" id="headerFont" ng-model="data.headerFont">
+              <option value="">Tahoma</option>
+              <option value="">Arial</option>
+              <option value="">Times New Roman</option>
             </select>
           </div>
           <div class="form-group">
             <label for="">Body:</label>
-            <select name="" id="">
-              <option value=""> Arial</option>
+            <select name="" id="bodyFont" class="form-control" ng-model="data.bodyFont">
+              <option value="">Arial</option>
+              <option value="">Tahoma</option>
+              <option value="">Times New Roman</option>
             </select>
           </div>
         </div>
@@ -22,11 +26,18 @@
         <div class="form-group">
           <h3>Color</h3>
           <label for="">Header:</label>
-          <input type="color" class="form-control" id="logoUrl" placeholder="http://">
+          <select type="" class="form-control" id="headerColor" ng-model="data.headerColor">
+            <option value="">Blue</option>
+            <option value="">Red</option>
+          </select>
         </div>
         <div class="form-group">
           <label for="">Body:</label>
-          <input type="color" class="form-control" id="appLogoUrl" placeholder="http://">
+          <select type="color" class="form-control" id="bodyColor" ng-model="data.bodyColor">
+            <option value="">Black</option>
+            <option value="">Red</option>
+            <option value="">Blue</option>
+          </select>
         </div>
       </div>
 

@@ -10,4 +10,8 @@
 angular.module('keystokeApp')
   .controller('FeaturesCtrl', function ($scope, Data) {
     $scope.data = Data.data;
+
+    $scope.updateData = function (data){
+      Data.update(data);
+    }
   });

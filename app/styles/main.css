@@ -71,12 +71,11 @@ body {
 
 #phone{
   float: right;
-  padding-top: 45px;
   padding-bottom: 50px;
 }
 
 .phone{
-  width: 75%;
+  width: 100%;
   height: auto;
 }
 
@@ -122,6 +121,24 @@ button.btn {
 
 .checkbox-slider--b-flat input:checked+span:before{
   background-color: #EF5C06;
+}
+
+select.form-control {
+  background-color: #0D253D;
+  color: white;
+}
+select#buttonColor {
+  background-color: #c30016;
+}
+select#barColor{
+  background-color: black;
+}
+select#backgroundColor {
+  background-color: white;
+  color: black;
+}
+select#bodyColor{
+  background-color: black;
 }
 
  Responsive: Portrait tablets and up
