@@ -12,10 +12,10 @@ angular.module('keystokeApp')
     $scope.data = Data.data;
     $scope.options = {
       availableColors: [
-        {id: "1", name: "Red"},
-        {id: "2", name: "Blue"},
-        {id: "3", name: "White"},
-        {id: "4", name: "Black"}
+        {id: '1', name: 'Red', hex: '#c30016'},
+        {id: '2', name: 'Blue', hex:'#0D253D'},
+        {id: '3', name: 'White', hex:'white'},
+        {id: '4', name: 'Black', hex:'black'}
       ]
     };
   });

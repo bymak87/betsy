@@ -1,12 +1,13 @@
 <div id="typography" class="container" ng-controller="TypographyCtrl">
   <div class="row">
+    {{data}}
       <form name="typography" action=""class="col-md-8 well">
         <h2>Typography</h2>
         <div class="col-md-5">
           <div class="form-group">
             <h3>Fonts</h3>
-            <label for="">Header:</label>
-            <select name="headerColor" class="form-control" id="headerFont" ng-model="data.headerFont" ng-options="option.name for option in options.availableFonts">
+            <label for="">Header:</label> {{data.headerFont.hex}}
+            <select name="headerColor" class="form-control" id="headerFont" ng-model="data.headerFont" ng-options="option.name for option in options.availableFonts" ng-style="{'background-color' : data.backgroundColor.hex}">
 
             </select>
           </div>
@@ -20,12 +21,12 @@
         <div class="form-group">
           <h3>Color</h3>
           <label for="">Header:</label>
-          <select type="" class="form-control" id="headerColor" ng-model="data.headerColor" ng-options="option.name for option in options.availableColors">
+          <select type="" class="form-control" id="headerColor" ng-model="data.headerColor" ng-options="option.name for option in options.availableColors" ng-style="{'background-color' : data.headerColor.hex}">
           </select>
         </div>
         <div class="form-group">
           <label for="">Body:</label>
-          <select type="color" class="form-control" id="bodyColor" ng-model="data.bodyColor" ng-options="option.name for option in options.availableColors">
+          <select type="color" class="form-control" id="bodyColor" ng-model="data.bodyColor" ng-options="option.name for option in options.availableColors" ng-style="{'background-color' : data.bodyColor.hex}">
           </select>
         </div>
       </div>

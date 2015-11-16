@@ -123,7 +123,7 @@ button.btn {
   background-color: #EF5C06;
 }
 
-select.form-control {
+/*select.form-control {
   background-color: #0D253D;
   color: white;
 }
@@ -139,7 +139,7 @@ select#backgroundColor {
 }
 select#bodyColor{
   background-color: black;
-}
+}*/
 
  Responsive: Portrait tablets and up
 @media screen and (min-width: 768px) {
