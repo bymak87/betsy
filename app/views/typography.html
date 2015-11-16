@@ -1,24 +1,18 @@
 <div id="typography" class="container" ng-controller="TypographyCtrl">
-
   <div class="row">
-      <form class="col-md-8 well">
+      <form name="typography" action=""class="col-md-8 well">
         <h2>Typography</h2>
         <div class="col-md-5">
           <div class="form-group">
             <h3>Fonts</h3>
             <label for="">Header:</label>
-            <select name="" class="form-control" id="headerFont" ng-model="data.headerFont">
-              <option value="">Tahoma</option>
-              <option value="">Arial</option>
-              <option value="">Times New Roman</option>
+            <select name="headerColor" class="form-control" id="headerFont" ng-model="data.headerFont" ng-options="option.name for option in options.availableFonts">
+
             </select>
           </div>
           <div class="form-group">
             <label for="">Body:</label>
-            <select name="" id="bodyFont" class="form-control" ng-model="data.bodyFont">
-              <option value="">Arial</option>
-              <option value="">Tahoma</option>
-              <option value="">Times New Roman</option>
+            <select name="" id="bodyFont" class="form-control" ng-model="data.bodyFont" ng-options="option.name for option in options.availableFonts">
             </select>
           </div>
         </div>
@@ -26,17 +20,12 @@
         <div class="form-group">
           <h3>Color</h3>
           <label for="">Header:</label>
-          <select type="" class="form-control" id="headerColor" ng-model="data.headerColor">
-            <option value="">Blue</option>
-            <option value="">Red</option>
+          <select type="" class="form-control" id="headerColor" ng-model="data.headerColor" ng-options="option.name for option in options.availableColors">
           </select>
         </div>
         <div class="form-group">
           <label for="">Body:</label>
-          <select type="color" class="form-control" id="bodyColor" ng-model="data.bodyColor">
-            <option value="">Black</option>
-            <option value="">Red</option>
-            <option value="">Blue</option>
+          <select type="color" class="form-control" id="bodyColor" ng-model="data.bodyColor" ng-options="option.name for option in options.availableColors">
           </select>
         </div>
       </div>
